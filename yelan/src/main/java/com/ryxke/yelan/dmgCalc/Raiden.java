@@ -1,4 +1,4 @@
-package com.ryxke.yelan.genshin;
+package com.ryxke.yelan.dmgCalc;
 
 import java.util.HashMap;
 
@@ -8,9 +8,9 @@ public class Raiden {
   double mobResist = 10;
 
   double atk;
-  double cd;
-  double er;
-  double dmgBonus;
+  double cd = 50;
+  double er = 100;
+  double dmgBonus = 0;
   double teamEnergy;
   
   int qLevel = 1;
@@ -19,10 +19,10 @@ public class Raiden {
   final double burstCost = 90;
 
   //CONSTRUCTORS AND OTHER VALUES
-  Raiden(){
-    
+  public Raiden(){
   }
-   Raiden(double atk, double cd, double er, double dmgBonus){
+
+  public Raiden(double atk, double cd, double er, double dmgBonus){
 
      this.atk = atk;
      this.cd = cd;

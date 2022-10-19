@@ -15,6 +15,7 @@ public class Main implements EventListener{
 
     private static String TOKEN = System.getenv("TOKEN");
     public static String prefix = "!!";
+    final static long GUILD_ID = 696901519655567402L;
     public static void main(String[] args) throws LoginException {
 
         JDA api = JDABuilder.createDefault(TOKEN)
@@ -25,6 +26,7 @@ public class Main implements EventListener{
         addCommands(api);
 
     }
+    
     public static void addCommands(JDA api){
         api.addEventListener(new Main());
         api.addEventListener(new Ping());

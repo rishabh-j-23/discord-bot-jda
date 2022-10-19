@@ -1,4 +1,4 @@
-package com.ryxke.yelan.genshin;
+package com.ryxke.yelan.dmgCalc;
 
 public class Artifacts {
 
